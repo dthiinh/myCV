@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
+
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background: #f0f2f5;
     color: #2c3e50;
     line-height: 1.6;
@@ -152,6 +154,29 @@ p, li {
     left: 0;
 }
 
+/* Work Experience */
+.experience {
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.experience h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.experience .duration {
+    color: #7f8c8d;
+    font-style: italic;
+    margin: 5px 0 10px 0;
+}
+
+.experience ul li {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
 /* Education & Projects */
 .edu-item, .exp-item {
     margin-bottom: 20px;
@@ -289,5 +314,19 @@ p, li {
         border-bottom-color: #3498db !important;
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
+    }
+    @media print {
+        .skill-category {
+        /* min-width: 180px;  */
+        padding: 5px !important;
+        margin: 4px !important;
+        }
+        p, li {
+            text-align: left !important;
+        }
+
+        .skills-grid li {
+            text-align: left !important;
+        }
     }
 }
