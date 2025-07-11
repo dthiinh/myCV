@@ -91,7 +91,7 @@ section h3 {
 
 /* Text alignment for paragraphs and lists */
 p, li {
-    text-align: justify;
+    text-align: left;
 }
 
 .summary p {
