@@ -2,240 +2,306 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vu Dinh Thinh CV</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vu Dinh Thinh - CV</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #263746;
+      background: #f3f5f7;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #fff;
+      padding: 12mm 12mm;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      column-gap: 18px;
+      align-items: start;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #d8e8f6;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 29px;
+      line-height: 1.05;
+      color: #263746;
+      letter-spacing: .15px;
+    }
+
+    .role {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.2;
+      color: #2d86c9;
+      font-weight: 700;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 10.4px;
+      line-height: 1.5;
+      color: #3b4652;
+    }
+
+    section {
+      margin-bottom: 9px;
+    }
+
+    h2 {
+      margin: 0 0 6px 0;
+      padding-bottom: 4px;
+      border-bottom: 1.6px solid #2d86c9;
+      font-size: 12.8px;
+      line-height: 1.1;
+      color: #263746;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+    }
+
+    h3 {
+      margin: 0;
+      color: #263746;
+      font-size: 11.2px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      font-size: 10.4px;
+      line-height: 1.38;
+      color: #303946;
+    }
+
+    .jobline,
+    .eduline {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 0 0 3px 0;
+    }
+
+    .date {
+      color: #6a7683;
+      font-size: 9.7px;
+      font-style: italic;
+      white-space: nowrap;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 12px;
+    }
+
+    li {
+      margin: 0 0 1px 0;
+      padding: 0;
+      font-size: 9.8px;
+      line-height: 1.32;
+      color: #303946;
+    }
+
+    .projects h3 {
+      margin-top: 4px;
+      margin-bottom: 2px;
+      font-size: 10.4px;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .tool-block h3 {
+      color: #2d86c9;
+      font-size: 10.1px;
+      margin-bottom: 2px;
+    }
+
+    .tool-block ul {
+      padding-left: 10px;
+    }
+
+    .tool-block li {
+      font-size: 9.5px;
+      line-height: 1.25;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <div class="profile">
-                <h1>Vu Dinh Thinh</h1>
-                <h2>Quality Assurance Engineer</h2>
-                <!-- <h2>Frontend Developer Intern</h2> -->
-                <!-- <h2>Test Engineer Intern</h2> -->
-                <!-- <h2>Automation Test Engineer</h2> -->
-                <!-- <h2>Test Engineer</h2> -->
-                <!-- <h2>Business Analyst Intern</h2> -->
-            </div>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> vudinhthinh2003@gmail.com</p>
-                <p><i class="fas fa-phone"></i> 0906309774</p>
-                <p><i class="fas fa-map-marker-alt"></i> District 11, Ho Chi Minh City, Vietnam</p>
-                <p><i class="fab fa-github"></i> github.com/dthiinh</p>
-                <p><i class="fab fa-linkedin"></i> linkedin.com/in/vuxdthiinh</p>
-            </div>
-        </header>
-        </header>
+  <div class="page">
+    <header class="header">
+      <div>
+        <h1>Vu Dinh Thinh</h1>
+        <div class="role">Quality Assurance Engineer</div>
+      </div>
+      <div class="contact">
+        vudinhthinh2003@gmail.com<br />
+        0906309774<br />
+        District 11, Ho Chi Minh City, Vietnam<br />
+        github.com/dthiinh<br />
+        linkedin.com/in/vuxdthiinh
+      </div>
+    </header>
 
-        <!-- Career Objectives -->
-        <section class="objectives">
-            <h3>Career Objectives</h3>
-            <p>Seeking to further develop as a QA Engineer by strengthening automation testing expertise and contributing to the quality and reliability of enterprise software systems.</p>
+    <section>
+      <h2>Career Objectives</h2>
+      <p>Seeking to further develop as a QA Engineer by strengthening automation testing expertise and contributing to
+        the quality and reliability of enterprise software systems.</p>
+    </section>
 
-        </section>
+    <section>
+      <h2>Professional Summary</h2>
+      <p>QA Engineer with hands-on experience in manual testing, API testing, regression testing, UAT validation, and
+        end-to-end business flow testing for enterprise web systems in digital identity and electronic signing domains.
+        Experienced in analyzing requirements, designing test cases, validating frontend/backend results, preparing
+        testing evidence, and collaborating with developers to track and retest defects.</p>
+    </section>
 
-        <!-- Profile Summary -->
-        <section class="summary">
-            <h3>Professional Summary</h3>
-            <!-- <p>A highly motivated Information Technology student with a strong passion for Frontend Development, especially in React.js and modern JavaScript frameworks. Completed several personal projects, demonstrating the ability to build responsive and user-friendly web applications. Eager to gain hands-on experience through a Frontend internship and grow into a professional developer.</p> -->
+    <section>
+      <h2>Work Experience</h2>
+      <div class="jobline">
+        <h3>Software Tester - Mobile-ID Company</h3>
+        <span class="date">May 2025 - Present</span>
+      </div>
+      <ul>
+        <li>Performed manual testing for enterprise web-based systems in digital identity and electronic signing
+          domains, including eKYC, eSign, eContract, and RSSP platforms.</li>
+        <li>Analyzed requirements and business flows to design, prepare, and execute test cases independently.</li>
+        <li>Executed UAT/SIT test cases for onboarding, authentication, digital signing, and certificate-related
+          business workflows.</li>
+        <li>Validated frontend behavior, backend API responses, and system results against expected business rules and
+          acceptance criteria.</li>
+        <li>Conducted functional testing, UI testing, smoke testing, regression testing, and retesting across multiple
+          releases.</li>
+        <li>Prepared testing evidence, reported defects, tracked issue status using OpenProject/internal tracking tools,
+          and followed up with developers until resolution.</li>
+        <li>Created and executed Postman collections to validate API functionality, including request/response data,
+          status codes, and business validation rules.</li>
+        <li>Designed and executed API performance test scripts using JMeter, including running tests via CLI.</li>
+        <li>Collaborated with developers, QA team members, and related stakeholders to clarify issues, verify fixes, and
+          improve overall test coverage.</li>
+      </ul>
+    </section>
 
-            <!-- <p>
-            A final-year Information Technology student actively seeking an internship to gain hands-on experience in software development.  
-            Strong foundation in frontend development with React.js and modern JavaScript frameworks.  
-            Open and eager to learn new technologies, including backend development, to grow into a proficient Fullstack Developer.  
-            Motivated to apply academic knowledge to real-world projects, improve both technical and soft skills, and build a solid foundation for a successful IT career.
-            </p> -->
+    <section>
+      <h2>Education</h2>
+      <div class="eduline">
+        <h3>Sai Gon University</h3>
+        <span class="date">2021 - 2025</span>
+      </div>
+      <ul>
+        <li>Major: Information Technology</li>
+        <li>Key courses: System Analysis and Design, Database Management, Software Testing, Programming Fundamentals
+        </li>
+      </ul>
+    </section>
 
-            <!-- <p>A final-year Information Technology student actively seeking an internship to gain hands-on experience in the software development field. Open to various roles, with interests in web development, system analysis, and application design. Eager to apply academic knowledge to real-world projects, enhance technical and soft skills, and lay a strong foundation for a professional IT career.</p> -->
+    <section class="projects">
+      <h2>My Projects</h2>
+      <h3>Software Testing Project - Mobile Phone E-Commerce Website</h3>
+      <ul>
+        <li>Created a test plan and detailed test cases based on requirements and use cases.</li>
+        <li>Performed manual testing for key features: login, cart, checkout, user/product/order management.</li>
+        <li>Applied black-box and white-box testing techniques and executed functional test cases.</li>
+        <li>Documented bugs, regression tested fixed issues, and reported defects to the development team.</li>
+      </ul>
+      <h3>System Analysis and Design Project</h3>
+      <ul>
+        <li>Analyzed and designed software architecture using UML and user stories.</li>
+        <li>Used Git and GitHub for source control and collaborative work.</li>
+      </ul>
+      <h3>ERP System Analysis and Implementation (Odoo)</h3>
+      <ul>
+        <li>Gathered requirements and modeled business processes for ERP modules.</li>
+        <li>Implemented and tested business workflows across Sales, Inventory, and HR modules.</li>
+      </ul>
+    </section>
 
-            <!-- tester intern -->
-            <!-- <p>
-                Final-year Information Technology student with a solid foundation in programming and strong interest in software testing. 
-                Currently seeking a Test Engineer Internship to gain hands-on experience with both manual and automated testing processes. 
-                Familiar with testing concepts, SDLC/STLC, and basic use of tools such as Selenium and Git. 
-                Eager to apply academic knowledge to real-world QA workflows, improve technical and teamwork skills, and build a strong foundation for a professional career in software quality assurance.
-            </p> -->
-
-            <!-- fresher tester -->
-            <p>
-                QA Engineer with hands-on experience in manual testing, API testing, regression testing, and UAT validation for enterprise web-based systems in digital identity and electronic signing domains, including eKYC, eSign, eContract, and RSSP platforms. Experienced in creating and executing API performance test scripts using JMeter and validating APIs with Postman. Familiar with Selenium and Playwright, with strong interest in expanding automation testing expertise.
-            </p>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="experience">
-            <h3>Work Experience</h3>
-            <div class="exp-item">
-                <h4>Software Tester – Mobile-ID Company</h4>
-                <p class="duration">May 2025 – Present</p>
-                <ul>
-                    <li>Performed manual testing for enterprise web-based systems in digital identity and electronic
-                        signing domains, including eKYC, eSign, eContract, and RSSP platforms.</li>
-                    <li>Analyzed requirements and business flows to design and execute test cases independently.</li>
-                    <li>Participated in User Acceptance Testing (UAT) activities by validating business workflows and
-                        ensuring implemented features met business requirements across multiple development phases.</li>
-                    <li>Identified, reported, and tracked defects, then re-tested fixes to ensure issues were resolved
-                        correctly.</li>
-                    <li>Conducted functional, UI, and regression testing across multiple releases.</li>
-                    <li>Designed and executed API performance test scripts using JMeter, including running tests via
-                        CLI.</li>
-                    <li>Created and executed Postman collections to validate API functionality through manual testing.
-                    </li>
-                    <li>Collaborated with developers and QA team members to clarify issues and improve overall test
-                        coverage.</li>
-                </ul>
-
-            </div>
-        </section>
-
-
-        <!-- Expearence Section -->
-        <section class="education">
-            <h3>Education</h3>
-            <div class="edu-item">
-                <h4>Sai Gon University</h4>
-                <p class="duration">2021 - 2025</p>
-                <ul>
-                    <li>Major: Information Technology</li>
-                    <li>Key courses: System Analysis and Design, Database Management, Software Testing, Programming
-                        Fundamentals</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects">
-            <h3>My Projects</h3>
-            <div class="exp-item">
-                <h4>Software Testing Project - Mobile Phone E-Commerce Website</h4>
-                <ul>
-                    <li>Created a test plan and detailed test cases based on requirements and use cases.</li>
-                    <li>Performed manual testing for key features: login, cart, checkout, user/product/order management.
-                    </li>
-                    <li>Applied black-box and white-box testing techniques and executed functional test cases.</li>
-                    <li>Documented bugs, regression tested fixed issues, and reported defects to the development team.
-                    </li>
-                </ul>
-                <h4>System Analysis and Design Project</h4>
-                <ul>
-                    <li>Analyzed and designed software architecture using UML and user stories.</li>
-                    <li>Used Git and GitHub for source control and collaborative work.</li>
-                </ul>
-                <h4>ERP System Analysis and Implementation (Odoo)</h4>
-                <ul>
-                    <li>Gathered requirements and modeled business processes for ERP modules.</li>
-                    <li>Implemented and tested business workflows across Sales, Inventory, and HR modules.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Projects Github -->
-        <!-- <section class="projects">
-            <h3>My Projects</h3>
-            <div class="exp-item">
-                <ul>
-                    <p><i class="fab fa-github"></i> MY CV: github.com/dthiinh/myCV</p>
-                    <p><i class="fab fa-github"></i> E-COMMERCE WEBSITE: github.com/dthiinh/e-commerce</p>
-                    <p><i class="fab fa-github"></i> MOVIE APP WEBSITE: github.com/dthiinh/Movie-App</p>
-                    <p><i class="fab fa-github"></i> SKIP GRAM MODEL: github.com/dthiinh/Skip-gram-model</p>
-                    <p><i class="fab fa-github"></i> REBUILD PRIMEKG: github.com/dthiinh/PrimeKG-Research</p>
-                </ul>
-            </div>
-        </section> -->
-
-
-
-        <!-- Technical Skills Section -->
-        <section class="skills">
-            <h3>Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Testing Tools</h4>
-                    <ul>
-                        <li>Selenium</li>
-                        <li>Postman</li>
-                        <li>Playwright</li>
-                        <li>Jmeter</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Technical Knowledge</h4>
-                    <ul>
-                        <li>Software Testing (Manual & Automation)</li>
-                        <li>System Analysis & Design</li>
-                        <li>Requirements Analysis</li>
-                        <li>SDLC & STLC</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Programming Languages</h4>
-                    <ul>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-
-
-                <!-- <div class="skill-category">
-                    <h4>Development Tools</h4>
-                    <ul>
-                        <li>Git</li>
-                        <li>MySQL</li>
-                        <li>VS Code</li>
-                        <li>SSMS</li>
-                    </ul>
-                </div> -->
-
-                <!-- <div class="skill-category">
-                    <h4>Web Technologies</h4>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>React.js</li>
-                        <li>FastAPI</li>
-                    </ul>
-                </div> -->
-
-                <div class="skill-category">
-                    <h4>Language Skills</h4>
-                    <ul>
-                        <li>English
-                            <ul>
-                                <li>Basic communication</li>
-                                <li>Reading & Writing</li>
-                                <li>Technical documentation</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Soft Skills</h4>
-                    <ul>
-                        <li>Teamwork</li>
-                        <li>Communication</li>
-                        <li>Time Management</li>
-                        <li>Problem Solving</li>
-                        <li>Quick Learning</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-    </div>
+    <section>
+      <h2>Tools &amp; Languages</h2>
+      <div class="tools-grid">
+        <div class="tool-block">
+          <h3>Testing / Tracking Tools</h3>
+          <ul>
+            <li>Postman</li>
+            <li>JMeter</li>
+            <li>OpenProject</li>
+          </ul>
+        </div>
+        <div class="tool-block">
+          <h3>Development Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+        <div class="tool-block">
+          <h3>Automation Exposure</h3>
+          <ul>
+            <li>Basic Selenium</li>
+            <li>Basic Playwright</li>
+          </ul>
+        </div>
+        <div class="tool-block">
+          <h3>Basic Programming</h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="tool-block">
+          <h3>Languages</h3>
+          <ul>
+            <li>English: TOEIC 860</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
